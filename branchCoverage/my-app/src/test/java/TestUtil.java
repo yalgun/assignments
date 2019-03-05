@@ -32,6 +32,12 @@ public class TestUtil {
 		assertTrue(true == c.compute(arr));
 	}
 	
+	@Test
+	public void nullArr(){
+		int[] arr={3,7,9};
+		assertTrue(false == c.compute(arr));
+	}
+	
 	@Test 
 	public void excp(){
 		try{
