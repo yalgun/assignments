@@ -17,5 +17,29 @@ public class TestUtil {
 	public void example() { 
 		assertTrue(true); 
 	}
+	
+	@Test
+	public void computeTesta(){
+		int[] arr=new int[1];
+		int[] arr2=new int[2];
+        assertTrue(false == c.compute(arr));
+        assertTrue(false == c.compute(arr2));
+	}
+	
+	@Test
+	public void forFor(){
+		int[] arr={1,2,3};
+		assertTrue(true == c.compute(arr));
+	}
+	
+	@Test 
+	public void excp(){
+		try{
+			int[] arr={0,0,0};
+			c.compute(arr);
+		}catch(RuntimeException excp){
+			assertTrue(true);
+		}
+	}
  
 }
